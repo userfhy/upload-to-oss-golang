@@ -1,0 +1,17 @@
+[default]
+# gitlab runner variables
+# 是否读取环境变量 1-读取
+# 为 1 时 该配置文件以下参数失效
+readVariable=1
+
+[oss]
+Endpoint=
+AccessKeyId=
+AccessKeySecret=
+
+[upload]
+bucketName=xscenic-qiweiwangguo-com
+# 远程目录 必须已授权 / 为根目录
+remoteFolder=tests/
+# 待上传文件目录 相对路径 选填 可在命令行传值
+localFile=folder/
