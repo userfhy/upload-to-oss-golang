@@ -22,7 +22,7 @@
 上传 `folderName` 文件夹，为相对路径
 
 ```bash
-go run uploadToOSS.go folderName
+go run upload_oss.go folderName
 ```
 
 静态编译
@@ -34,7 +34,7 @@ CGO_ENABLED=0 go build -a -ldflags '-extldflags "-static"' upload_oss.go
 ## 上传示例输出
 
 ```bash
-$ chmod +x uploadToOSS && ./uploadToOSS dist
+$ chmod +x upload_oss && ./upload_oss dist
 dist
 OSS Go SDK Version:  1.9.1
 Need to upload file lists：
